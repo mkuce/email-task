@@ -10,8 +10,6 @@ require("dotenv").config();
 module.exports = defineConfig({
   e2e: {
     baseUrl: "https://mail.yahoo.com",
-    // We've imported your old cypress plugins here.
-    // You may want to clean this up later by importing these.
     async setupNodeEvents(on, config) {
       const bundler = createBundler({
         plugins: [createEsbuildPlugin(config)],
